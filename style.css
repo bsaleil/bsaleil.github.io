@@ -1,0 +1,81 @@
+/* https://coolors.co/e8dab2-dd6e42-4f6d7a-c0d6df-eaeaea */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    background-image: url("bg5.png");
+    font-family: "Chivo", sans-serif;
+    padding-top: 50px;
+    color: #4F6D7A;
+}
+
+
+#info {
+    width:90%;
+    margin:auto;
+    height:250px;
+    font-size: 20px;
+}
+
+#info .avatar {
+    width: 200px;
+    float:right;
+}
+
+#info ul {
+    list-style-type: none;
+}
+
+#info #name {
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: #DD6E42;
+}
+
+section {
+    width:90%;
+    margin:auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+section table .tableHeader {
+    text-align: center;
+}
+
+section h1 {
+    font-size: 26px;
+    background-color: #DDDDDD;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin: 20px;
+    font-size: 16px;
+}
+
+section ul {
+    padding-left: 50px;
+}
+
+section li {
+    padding: 5px;
+}
+
+section td {
+    padding:5px;
+}
+
+section .date {
+    color: #E87A5C;
+}
+
+.avatar, .featuredpage img, .featuredpost img, .post-image {
+    background-color: #F5F5F5;
+    border: 3px solid #DDDDDD;
+    padding: 5px;
+}
