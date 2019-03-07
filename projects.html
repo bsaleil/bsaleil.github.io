@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Baptiste Saleil</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="header">
+            <h1>Baptiste Saleil</h1>
+            <ul>
+            <li><a href="./index.html">About</a> |</li>
+            <li><a class="currentPage" href="./projects.html">Projects</a> |</li>
+            <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+
+        <div id="pageProjects">
+            <section>
+                This page briefly presents various projects I'm working on or I've worked on.
+            </section>
+            <hr/>
+            <section>
+                <h2>LC</h2>
+                This is the project I spend most of my time these days. <br/>
+                It is the compiler I build for my PhD and I used as a research tool for some years now. <br/>
+                It is not intended to be used in production and must instead be considered as a buggy(-woogie)
+                but unique tool I use, with a lot of fun, to explore the JIT compilation world. <br/>
+                LC is an optimizing JIT compiler for Scheme written in Scheme using new JIT compilation techniques presented in some research papers.<br/>
+                LC officially stands for <i>Lazy Compiler</i> but also for <i>Le Compilateur</i> that means <i>The Compiler</i> in French. <br/>
+                Unfortunately, I spend less time on it since the beginning of 2019 because I'm focusing on writing my PhD dissertation.
+                <ul>
+                    <li><a>Source repository</a></li>
+                    <li><a>Research papers</a></li>
+                </ul>
+            </section>
+
+            <hr/>
+            <section>
+                <h2>Timbit</h2>
+                Timbit is an attempt to build a new Scheme implementation from scratch that secretely wants to be the successor of LC. <br/>
+                For now, Timbit is slow because it is an interpreter and is not optimized. <br/>
+                It is written in C++ and uses an intermediate representation that is designed for the purpose of becoming a generic bytecode for dynamic languages. <br/>
+                Unlike LC, it features a REPL and is intended to be used for real programs instead of being a research tool. <br/>
+                Timbit follows the Scheme implementation names tradition (like the Orbit, Rabbit and Gambit compilers). <br/>
+                It is named for these <a>small sweet balls</a>.
+                <ul>
+                    <li><a>No public repository yet :(</a></li>
+                </ul>
+            </section>
+
+            <hr/>
+            <section>
+                <h2>Engine</h2>
+            </section>
+
+            <hr/>
+            <section><h2>Game</h2></section>
+        </div>
+    </body>
+</html>
