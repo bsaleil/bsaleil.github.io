@@ -9,6 +9,7 @@
 body {
     margin: 30px;
     width: 50%;
+    min-width: 500px;
 }
 
 a {
