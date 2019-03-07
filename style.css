@@ -7,9 +7,9 @@
 }
 
 body {
-    margin: 30px;
-    width: 50%;
-    min-width: 300px;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
 }
 
 a {
