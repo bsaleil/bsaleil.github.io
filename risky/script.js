@@ -12,7 +12,7 @@ var lib = {}
 var code = false;
 
 // change example code
-function exampleSelected(arg) {
+function exampleSelected(event) {
     var val = event.target.value;
     var input = document.getElementById("code");
     if (val == "Fibonacci") {
