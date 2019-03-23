@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Risky</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="librisk.js"></script>
+
+    <script src="ace.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+            <div id="head">
+                <img src="logo.png" alt="logo">
+                <div>Risky is a RISC-V work-in-progress emulator ported to the web using <a href="https://emscripten.org/">emscripten</a></div>
+                <div id="version"></div>
+            </div>
+            <h2 class="title">Input binary</h2>
+            <div class="select">
+              <select name="examples">
+                <option>Examples</option>
+                <option>Sum</option>
+                <option>Fibonacci</option>
+              </select>
+            </div>
+            <div class="field">
+              <div class="control">
+                <div id="editor"></div>
+              </div>
+            </div>
+            <div class="field is-grouped is-grouped-right">
+              <p class="control">
+                <a id="buttonRun" class="button is-primary">
+                  Run<!-- <i class="fas fa-spinner fa-pulse"></i> -->
+                </a>
+              </p>
+            </div>
+            <h2 class="title">Registers</h2>
+            <fieldset disabled>
+            <table class="table is-bordered">
+              <tbody>
+                <tr><th>x0</th><td><input id="r0" class="input" type="text" value="0xFFFFFFFF"></td><th> x8</th><td><input  id="r8" class="input" type="text" value="0xFFFFFFFF"></td><th>x16</th><td><input id="r16" class="input" type="text" value="0xFFFFFFFF"></td><th>x24</th><td><input id="r24" class="input" type="text" value="0xFFFFFFFF"></td></tr>
+                <tr><th>x1</th><td><input id="r1" class="input" type="text" value="0xFFFFFFFF"></td><th> x9</th><td><input  id="r9" class="input" type="text" value="0xFFFFFFFF"></td><th>x17</th><td><input id="r17" class="input" type="text" value="0xFFFFFFFF"></td><th>x25</th><td><input id="r25" class="input" type="text" value="0xFFFFFFFF"></td></tr>
+                <tr><th>x2</th><td><input id="r2" class="input" type="text" value="0xFFFFFFFF"></td><th>x10</th><td><input id="r10" class="input" type="text" value="0xFFFFFFFF"></td><th>x18</th><td><input id="r18" class="input" type="text" value="0xFFFFFFFF"></td><th>x26</th><td><input id="r26" class="input" type="text" value="0xFFFFFFFF"></td></tr>
+                <tr><th>x3</th><td><input id="r3" class="input" type="text" value="0xFFFFFFFF"></td><th>x11</th><td><input id="r11" class="input" type="text" value="0xFFFFFFFF"></td><th>x19</th><td><input id="r19" class="input" type="text" value="0xFFFFFFFF"></td><th>x27</th><td><input id="r27" class="input" type="text" value="0xFFFFFFFF"></td></tr>
+                <tr><th>x4</th><td><input id="r4" class="input" type="text" value="0xFFFFFFFF"></td><th>x12</th><td><input id="r12" class="input" type="text" value="0xFFFFFFFF"></td><th>x20</th><td><input id="r20" class="input" type="text" value="0xFFFFFFFF"></td><th>x28</th><td><input id="r28" class="input" type="text" value="0xFFFFFFFF"></td></tr>
+                <tr><th>x5</th><td><input id="r5" class="input" type="text" value="0xFFFFFFFF"></td><th>x13</th><td><input id="r13" class="input" type="text" value="0xFFFFFFFF"></td><th>x21</th><td><input id="r21" class="input" type="text" value="0xFFFFFFFF"></td><th>x29</th><td><input id="r29" class="input" type="text" value="0xFFFFFFFF"></td></tr>
+                <tr><th>x6</th><td><input id="r6" class="input" type="text" value="0xFFFFFFFF"></td><th>x14</th><td><input id="r14" class="input" type="text" value="0xFFFFFFFF"></td><th>x22</th><td><input id="r22" class="input" type="text" value="0xFFFFFFFF"></td><th>x30</th><td><input id="r30" class="input" type="text" value="0xFFFFFFFF"></td></tr>
+                <tr><th>x7</th><td><input id="r7" class="input" type="text" value="0xFFFFFFFF"></td><th>x15</th><td><input id="r15" class="input" type="text" value="0xFFFFFFFF"></td><th>x23</th><td><input id="r23" class="input" type="text" value="0xFFFFFFFF"></td><th>x31</th><td><input id="r31" class="input" type="text" value="0xFFFFFFFF"></td></tr>
+              </tbody>
+            </fieldset>
+            </table>
+
+  </div>
+
+  </body>
+</html>

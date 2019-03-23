@@ -1,0 +1,38 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.textarea {
+    width: 100%;
+    height: 300px;
+}
+
+.select {
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 200px;
+}
+
+.table {
+    width: 100%;
+}
+
+body {
+    padding-top: 20px;
+}
+
+#head {
+    text-align: center;
+    color: #BBBBBB;
+}
+
+#editor {
+    width: 100%;
+    height: 300px;
+    border-radius: 2px;
+    border: 1px solid #BBBBBB;
+}
