@@ -30,6 +30,7 @@ body {
 #head {
     height: 160px;
     background-image: url("bg.svg");
+    background-size: 100% 100%;
 }
 
 #head h1 {
