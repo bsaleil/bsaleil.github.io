@@ -33,7 +33,7 @@ body {
 
 /* Display svg only in wide mode */
 @media screen and (min-width : 1000px) { #head { height: 160px; background-image: url("bg.svg"); background-size: 100% 100%; } }
-@media screen and (max-width : 1000px) { #head { background-color: #e8e6d8; } }
+@media screen and (max-width : 1000px) { #head { background-color: #e8e6d8; padding-top: 10px; } }
 #head {
     width: 100%;
 }
