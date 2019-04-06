@@ -1,89 +1,69 @@
-<!DOCTYPE HTML>
 <html>
-  <head>
+<header>
     <title>Baptiste Saleil</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30694686-1"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-30694686-1');</script>
-    <link rel="icon" type="image/png" href="fav.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script type = "text/javascript" src = "script.js" ></script>
-  </head>
-  <body>
-    <div id="header">
-        <h1>Baptiste Saleil</h1>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</header>
+<body>
+
+    <div id="head">
+        <div id="headin">
+        <img id="profile" src="https://bsaleil.github.io/profile.png" alt="profile">
+        <h1>Baptiste Saleil
+            <a href="mailto:baptiste.saleil@umontreal.ca"><i class="social fas fa-envelope"></i></a>
+            <a href="https://github.com/bsaleil"><i class="social fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bsaleil/"><i class="social fab fa-linkedin"></i></a>
+        </h1>
+        </div>
     </div>
 
-    <!-- Bio -->
-    <section id="secBio">
-        <img id="profile" src="profile.png" alt="Profile Picture">
-        <div id="desc">
-        Ph.D. Candidate<br/>
-        Université de Montréal<br/>
-        Montréal, Canada<br/>
-        baptiste.saleil@umontreal.ca<br/><br/>
-        <a href="https://github.com/bsaleil"><img style="width: 32px;" src="github64.png" alt="Github page"></a>
-        <a href="https://www.linkedin.com/in/bsaleil/"><img style="width: 32px;" src="linkedin64.png" alt="Github page"></a>
-        </div>
-    </section>
+    <div id="content">
 
-    <!-- Interests -->
-    <section id="secInterests">
+        <section>
         <h2>Interests</h2>
-        I'm interested in the design and implementation of programming languages.
-        My current research focuses on simple Just-In-Time (JIT) compilation techniques and optimizations allowing to efficiently implement dynamic programming languages.
-        For my Ph.D., I implement these techniques and optimizations in a JIT compiler for the Scheme programming language called LC.<br/>
+        I'm interested in the design and implementation of programming languages. My current research focuses on simple Just-In-Time (JIT) compilation techniques and optimizations allowing to efficiently implement dynamic programming languages. For my Ph.D., I implement these techniques and optimizations in a JIT compiler for the Scheme programming language called LC.
         I'm also interested in real time rendering techniques. I built several tools to explore this topic.
-    </section>
+        <section>
 
-    <!-- Publications -->
-    <section id="secPublications">
-        <h2>Publications</h2>
+
+        <!-- <section>
+        <h2>Links</h2>
         <ul>
-            <li>Baptiste Saleil and Marc Feeley. <b>Building JIT Compilers for Dynamic Languages with Low Development Effort</b><br/>
-                <i>Virtual Machines and Language Implementations (VMIL'18), 2018</i><br/>
-                [ <a href="docs/vmil18.pdf">paper</a> | <a href="docs/vmil18-slides.pdf">slides</a> ]
-            </li>
-            <li>Baptiste Saleil and Marc Feeley. <b>Interprocedural Specialization of Higher-Order Dynamic Languages Without Static Analysis</b><br/>
-                <i>European Conference on Object-Oriented Programming (ECOOP'17), 2017</i><br/>
-                [ <a href="docs/ecoop17.pdf">paper</a> | <a href="docs/ecoop17-slides.pdf">slides</a> ]
-            </li>
-            <li>Baptiste Saleil and Marc Feeley. <b>Type Check Removal Using Lazy Interprocedural Code Versioning</b><br/>
-                <i>Scheme and Functional Programming Workshop (SFPW'15), 2015</i><br/>
-                [  <a href="docs/sfpw15.pdf">paper</a> | <a href="docs/sfpw15-slides.pdf">slides</a> ]
-            </li>
-            <li>Baptiste Saleil and Marc Feeley. <b>Code Versioning and Extremely Lazy Compilation of Scheme</b><br/>
-                <i>Scheme and Functional Programming Workshop (SFPW'14), 2014</i><br/>
-                [ <a href="docs/sfpw14.pdf">paper</a> | <a href="docs/sfpw14-slides.pdf">slides</a> ]
-            </li>
-            <li>Baptiste Saleil. <b>Étude de Kit de Développement de Compilateurs et Machines Virtuelles</b><br/>
-                <i>Master's thesis</i><br/>
-                [ <a href="docs/mthesis.pdf">paper</a> ]
-            </li>
+            <li><a href="https://github.com/bsaleil/lc">LC:</a> JIT compiler for Scheme targeting x86-64 platforms</li>
+            <li><a href="">RISKY:</a> A work-in-progress RISC-V emulator</li>
+            <li><a href="">Gamedev:</a> Various gamedev related experiments</li>
         </ul>
-    </section>
+        <section> -->
 
-    <!-- Teaching -->
-    <section id="secTeaching">
-        <h2>Teaching</h2>
-        <table>
-            <tr><td class="tableHeader">2018 &rArr; 2019</td> <td>Teaching Assistant, Programming Languages and Compilation<br/> <i>Université de Montréal, Montréal, Canada</i></td></tr>
-            <tr><td class="tableHeader">2014 &rArr; 2018</td> <td>Teaching Assistant, Programming Language Concepts<br/> <i>Université de Montréal, Montréal, Canada</i></td></tr>
-            <tr><td class="tableHeader">2013</td>             <td>Teaching Assistant, Imperative Programming<br/> <i>Université Montpellier 2, Montpellier, France</i></td></tr>
-            <tr><td class="tableHeader">2012</td>             <td>Teaching Assistant, Basic Concepts of Computer Science<br/> <i>Université Montpellier 2, Montpellier, France</i></td></tr>
-        </table>
-    </section>
+        <section id="secPublications">
+            <h2>Publications</h2>
+            <ul>
+                <li>Baptiste Saleil and Marc Feeley. <b>Building JIT Compilers for Dynamic Languages with Low Development Effort</b><br/>
+                    <i>Virtual Machines and Language Implementations (VMIL'18), 2018</i><br/>
+                    [ <a href="docs/vmil18.pdf">paper</a> | <a href="docs/vmil18-slides.pdf">slides</a> ]
+                </li>
+                <li>Baptiste Saleil and Marc Feeley. <b>Interprocedural Specialization of Higher-Order Dynamic Languages Without Static Analysis</b><br/>
+                    <i>European Conference on Object-Oriented Programming (ECOOP'17), 2017</i><br/>
+                    [ <a href="docs/ecoop17.pdf">paper</a> | <a href="docs/ecoop17-slides.pdf">slides</a> ]
+                </li>
+                <li>Baptiste Saleil and Marc Feeley. <b>Type Check Removal Using Lazy Interprocedural Code Versioning</b><br/>
+                    <i>Scheme and Functional Programming Workshop (SFPW'15), 2015</i><br/>
+                    [  <a href="docs/sfpw15.pdf">paper</a> | <a href="docs/sfpw15-slides.pdf">slides</a> ]
+                </li>
+                <li>Baptiste Saleil and Marc Feeley. <b>Code Versioning and Extremely Lazy Compilation of Scheme</b><br/>
+                    <i>Scheme and Functional Programming Workshop (SFPW'14), 2014</i><br/>
+                    [ <a href="docs/sfpw14.pdf">paper</a> | <a href="docs/sfpw14-slides.pdf">slides</a> ]
+                </li>
+                <li>Baptiste Saleil. <b>Étude de Kit de Développement de Compilateurs et Machines Virtuelles</b><br/>
+                    <i>Master's thesis</i><br/>
+                    [ <a href="docs/mthesis.pdf">paper</a> ]
+                </li>
+            </ul>
+        </section>
+    </div>
 
-    <!-- Education -->
-    <section id="secEducation">
-        <h2>Education</h2>
-        <table>
-            <tr><td class="tableHeader">2013 &rArr; now</td>  <td>Ph.D., Computer Science<br/>                   <i>Université de Montréal, Montréal, Canada</i></td></tr>
-            <tr><td class="tableHeader">2011 &rArr; 2013</td> <td>M.Sc., Computer Science<br/>                   <i>Université Montpellier 2, Montpellier, France</i></td></tr>
-            <tr><td class="tableHeader">2010 &rArr; 2011</td> <td>B.Sc., Computer Science<br/>                   <i>Université Montpellier 2, Montpellier, France</i></td></tr>
-            <tr><td class="tableHeader">2008 &rArr; 2010</td> <td>French Technical Degree, Computer Science<br/> <i>Université Montpellier 2, Montpellier, France</i></td></tr>
-        </table>
-    </section>
-
-  </body>
+</body>
 </html>

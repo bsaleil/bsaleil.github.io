@@ -1,103 +1,63 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    color: #444444;
+@font-face {
+    font-family: "lmroman";
+    src:url("./lmroman10-regular.otf") format("opentype");
 }
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #fefefe;
+    color: #8c8981;
+    font-family: 'lmroman', serif;
+    font-size: 20px;
+}
+
+a { color: #8c8981; }
+a:hover { color: #6c6961; }
 
 body {
-    box-sizing: border-box;
-    padding: 30px;
-    width: 100%;
+    margin:auto;
 }
 
-a {
-    color: #82a6c9;
-    text-decoration: none;
+#headin, #content {
+    margin: auto;
+    width: 60%;
 }
 
-.currentPage {
-    color: #527699;
+
+/* HEADER */
+
+#head {
+    height: 160px;
+    background-image: url("bg.svg");
 }
+
+#head h1 {
+    float: right;
+    font-size: 50px;
+}
+
+#head #profile {
+    margin-top: 25;
+    float: left;
+    width: 100px;
+    border-radius: 100px;
+    transform: scaleX(-1);
+}
+
+#head .social {
+    font-size: 30px;
+    margin-left: 20px;
+    width: 24px;
+}
+
+/* CONTENT */
 
 section {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
-section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    overflow: hidden;
-    color: #82a6c9;
-}
-
-section h2:after {
-    content:"";
-    display: inline-block;
-    height: 0.5em;
-    vertical-align: bottom;
-    width: 100%;
-    margin-right: -100%;
-    margin-left: 10px;
-    border-top: #444444 2px solid;
-}
-
-/* MENU */
-
-#header    { margin-bottom: 30px; }
-#header h1 { font-size: 40px;     }
-#header li { display: inline;     }
-#header a  { font-weight: bold;   }
-
-/* BIO */
-
-#secBio #profile {
-    float: left;
-    width: 150px;
-}
-
-#secBio #desc {
-    display: table-cell;
-    vertical-align: middle;
-    height: 150px;
-    padding-left: 30px;
-}
-
-/* PUBLICATIONS */
-
-#secPublications li {
-    margin-top: 30px;
-    list-style-type: none;
-}
-
-/* TEACHING */
-
-#secTeaching td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#secTeaching .tableHeader {
-    text-align: center;
-    width: 150px;
-}
-
-/* EDUCATION */
-
-#secEducation td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#secEducation .tableHeader {
-    text-align: center;
-    width: 150px;
-}
-
-/* PROJECTS */
-
-#pageProjects section li {
-    margin-left: 25px;
+section a {
+    color: #9d876c;
+    text-decoration: underline;
 }
