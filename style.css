@@ -61,10 +61,10 @@ body {
 
 /* Put socials below title and center in narrow mode  */
 @media screen and (max-width : 1000px) { #head #socials { display: block; margin:auto; } }
+@media screen and (min-width : 1000px) { #head .social { margin-left: 10px; } }
+@media screen and (max-width : 1000px) { #head .social { margin-left: 0px; } }
 #head .social {
     font-size: 30px;
-    margin-left: 20px;
-    width: 24px;
 }
 
 /* CONTENT */
