@@ -22,6 +22,10 @@ body {
     margin:auto;
 }
 
+li {
+    margin-left: 20px;
+}
+
 @media screen and (min-width : 1000px) { #headin, #content { width: 60%; } }
 @media screen and (max-width : 1000px) { #headin, #content { width: 80%; } }
 #headin, #content {
@@ -69,8 +73,9 @@ body {
 
 /* CONTENT */
 
-section {
-    margin-top: 50px;
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 section a {
