@@ -15,11 +15,12 @@ body, html {
     font-size: 20px;
 }
 
-a { color: #8c8981; }
+a { color: #8c8981; text-decoration: none; }
 a:hover { color: #6c6961; }
 
 body {
     margin:auto;
+    margin-bottom: 50px;
 }
 
 li {
@@ -82,3 +83,9 @@ section a {
     color: #9d876c;
     text-decoration: none;
 }
+
+section img {
+    margin: 20px;
+}
+
+.tcenter { text-align: center; }
