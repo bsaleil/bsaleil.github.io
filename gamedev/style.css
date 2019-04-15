@@ -1,0 +1,10 @@
+#content .media {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+}
+
+#content ul {
+    padding: 30px;
+}
