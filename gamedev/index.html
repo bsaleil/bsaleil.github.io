@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Baptiste Saleil</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30694686-1"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-30694686-1');</script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="head">
+        <div id="headin">
+            <a href="/index.html"><img id="profile" src="../profile.png" alt="profile"></a>
+            <h1><a href="/index.html">Baptiste Saleil</a>
+                <span id="socials">
+                    <a href="mailto:baptiste.saleil@umontreal.ca"><i class="social fas fa-envelope"></i></a>
+                    <a href="https://github.com/bsaleil"><i class="social fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/bsaleil/"><i class="social fab fa-linkedin"></i></a>
+                </span>
+            </h1>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <!-- Engine -->
+        <section>
+        <h2></h2>
+        I've always loved video games and some times ago, I implemented some prototypes to explore game development, in particular using the OpenGL API.
+        These experiments led me to build a lightweight 3D engine with the following features:
+        <ul>
+            <li>Custom OpenGL forward renderer using Phong shading and directional, spotlight and point lighting</li>
+            <li>Scripting with JavaScript using the <a href="https://duktape.org/">Duktape</a> engine</li>
+            <li>Physics integration with the <a href="https://www.bulletphysics.org/">Bullet</a> engine</li>
+            <li>3D model loading with the <a href="http://www.assimp.org/">Assimp</a> library</li>
+            <li>Windowing and Audio with the <a href="https://www.sfml-dev.org/">SFML</a> library</li>
+            <li>Scene loading from <a href="https://www.json.org/">JSON</a> files</li>
+            <li>GUI using the <a href="https://github.com/ocornut/imgui">Dear ImGui</a> library</li>
+            <li>Gluing all of the above in C++</li>
+            <li>Multiplatform (GNU/Linux and Windows)</li>
+        </ul>
+        </section>
+
+        <!-- Lost in Transmission -->
+        <section>
+        With some friends, we participated in the <a href="https://globalgamejam.org/">Global Game Jam</a> and used this engine
+        to build <b>Lost in Transmission</b>, a small puzzle game about electronic components:
+        <img style="max-width: 900px;" class="media" src="../media/ggj18.png" alt="profile">
+        </section>
+
+        <!-- Skeletal animation -->
+        <section>
+        I then extended the engine to explore CPU skeletal animation.<br/>
+        The Mutant model from <a href="https://www.mixamo.com/">Mixamo</a> celebrated it by a wonderful dance:
+        <video style="max-width: 600px;" class="media" playsinline autoplay muted loop>
+          <source src="../media/skeletal.webm" type="video/webm">
+          Your browser does not support the video tag :(
+        </video>
+        </section>
+
+        <!-- RTS Game -->
+        <section>
+        I'm also a huge fan of RTS, city-building and exploration games, in particular the <a href="https://en.wikipedia.org/wiki/Anno_(series)">Anno</a> games
+        and I've always wanted to implement my own city-building game.
+        I then worked on a prototype engine designed for grid based city-building resource-gathering games.
+        This prototype also allowed me to further explore rendering techniques with OpenGL.
+        The renderer features:
+        <ul>
+            <li>Deferred rendering</li>
+            <li>Phong shading</li>
+            <li>Shadows based on dynamic shadow mapping</li>
+            <li>Screen Space Ambient Occlusion (SSAO)</li>
+            <li>Post-processing filters</li>
+        </ul>
+        That was a fun experience,
+        this is what this prototype looks like:
+        <video style="max-width: 800px;" class="media" playsinline autoplay muted loop>
+          <source src="../media/proto.webm" type="video/webm">
+          Your browser does not support the video tag :(
+        </video>
+        </section>
+    </div>
+
+</body>
+</html>
